@@ -5,5 +5,9 @@
 The demo will be provided soon
 
 # Installation
-` npm install 
- node app.js `
+` npm install `
+
+# How to run
+
+` node app.js `
+
