@@ -59,3 +59,11 @@
 	display: inline-block;
 	margin-left: 10px;
 }
+.navbar-custom .dropdown-menu{
+	padding:5px;
+}
+
+.btn .glyphicon{
+	display: inline-block;
+	margin: 0 5px; 
+}

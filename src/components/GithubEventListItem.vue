@@ -6,6 +6,7 @@
 	export default {
 	  props: ['gEvent'],
 	  computed: {
+	  	//generate a string, depending on the gEvent content
 	  	gEventString(){
 	  		var result = `<a href="https://github.com/${this.gEvent.actor.login}" target="_blank">${this.gEvent.actor.display_login}</a> `;
 	  		switch(this.gEvent.type){

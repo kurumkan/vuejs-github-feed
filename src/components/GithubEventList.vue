@@ -1,11 +1,20 @@
 <template>
-    <div class='github-event-list'>        
-        <h1>Your Feed</h1>        
-        <div v-for="gEvent in githubEvents">            
-            <app-github-event-list-item :gEvent='gEvent'></app-github-event-list-item>            
+    <!-- Component will render all the events as a list -->
+    <div class='github-event-list container-fluid'>        
+        <div class='row'>
+            <div class='col-md-3'>
+            </div>
+            <div class='col-md-6'>
+                <h1>Your Feed</h1>        
+                <div v-for="gEvent in githubEvents">            
+                    <app-github-event-list-item :gEvent='gEvent'></app-github-event-list-item>            
+                </div>
+
+                <button class='btn btn-default btn-block' @click="loadMoreEvents()">Load more</button>
+            </div>
+            <div class='col-md-3'>
+            </div>    
         </div>
-        
-        <button class='btn btn-default btn-block' @click="loadMoreEvents()">Load more</button>
     </div>
 </template>
 
@@ -21,7 +30,8 @@
         components: {                 
             appGithubEventListItem: GithubEventListItem
         },
-        created: function(){                        
+        created: function(){        
+            //only authorized user can see the component's content                
             if(!this.$store.state.user)this.$router.push('/');
             else this.$store.dispatch('fetchGithubEvents',1);
         },

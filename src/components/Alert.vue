@@ -1,5 +1,6 @@
-<template>
-    <div class='error'>        
+<template>    
+    <!-- component will display error messages -->
+    <div class='alert'>        
         <div v-if='error'>
             <div class="alert alert-danger" role="alert"><strong>Oops! </strong>{{error}}</div>
         </div>
