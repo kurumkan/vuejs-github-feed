@@ -40,11 +40,6 @@
 	margin-bottom: 30px;
 }
 
-.github-event-list-item{
-	border-bottom: 1px solid #eee;
-	padding: 5px 0;
-}
-
 .navbar-custom .navbar-nav > .active > a, 
 .navbar-nav > .active > a:hover, 
 .navbar-nav > .active > a:focus,
@@ -60,4 +55,15 @@
 .navbar-custom .router-link-active a, .navbar-custom .router-link-active a:hover{
 	background: #222;
 	padding-bottom: 20px;
+}
+
+.github-event-list-item{
+	border-bottom: 1px solid #aaa;
+	padding: 10px;
+}
+
+.github-event-list-item .fa{
+	display: inline-block;
+	color: #777;
+	margin-right: 10px;	
 }

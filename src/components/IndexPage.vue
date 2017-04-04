@@ -29,8 +29,7 @@
                 username,
                 avatar_url
               }
-            });           
-            console.log('sigin', token, username, avatar_url)
+            });                       
             localStorage.setItem('token', token);
             localStorage.setItem('username', username);
             localStorage.setItem('avatar_url', avatar_url);

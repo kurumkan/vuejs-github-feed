@@ -1,6 +1,6 @@
 export default {
 	updateGithubEvents(state, data){		
-		state.githubEvents = data;
+		state.githubEvents = [...state.githubEvents, ...data];
 	},
 
 	authUser(state, payload){			

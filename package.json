@@ -1,11 +1,10 @@
 {
-  "name": "vuex-basics",
+  "name": "kurumkan-github-viewer",
   "description": "A Vue.js project",
   "version": "1.0.0",
-  "author": "Maximilian Schwarzmüller",
+  "author": "kurumkan",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --inline --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
@@ -14,7 +13,6 @@
     "express": "^4.15.2",
     "jwt-simple": "^0.5.1",
     "passport": "^0.3.2",
-    "passport-facebook": "^2.1.1",
     "passport-github2": "^0.1.10",
     "vue": "^2.1.0",
     "vue-router": "^2.3.1",

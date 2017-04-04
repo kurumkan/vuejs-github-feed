@@ -1,15 +1,15 @@
 import axios from 'axios';
 
 export default {	
-	fetchGithubEvents(context, id){
+	fetchGithubEvents(context, page=1){
 		var token = localStorage.getItem('token');
 		var username = localStorage.getItem('username');
-		axios.get('https://api.github.com/users/'+username+'/received_events?access_token='+token)
+		axios.get('https://api.github.com/users/'+username+'/received_events?access_token='+token+'&page='+page+'&per_page=10')
 		.then((response)=>{								
 			context.commit('updateGithubEvents', response.data);
 		})
 		.catch((error)=>{
 			context.commit('setError', 'Something went wrong. We are working on it.');
 		});
-	}
+	}	
 }

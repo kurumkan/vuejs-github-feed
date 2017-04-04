@@ -9,14 +9,14 @@
 	  	gEventString(){
 	  		var result = `<a href="https://github.com/${this.gEvent.actor.login}" target="_blank">${this.gEvent.actor.display_login}</a> `;
 	  		switch(this.gEvent.type){
-				case 'CreateEvent':
-					result+='created repository '
+				case 'CreateEvent':					
+					result='<i class="fa fa-folder-o" aria-hidden="true"></i>'+result+'created repository '
 					break;
-				case 'WatchEvent':
-					result+='starred '
+				case 'WatchEvent':				
+					result='<i class="fa fa-star" aria-hidden="true"></i>'+result+'starred '
 					break;	
 				case 'ForkEvent':
-					result+='forked '	
+					result='<i class="fa fa-code-fork" aria-hidden="true"></i>'+result+'forked '	
 					break;		
 				default:
 					result+='did something with '		

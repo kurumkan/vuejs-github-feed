@@ -1,4 +1,4 @@
-# Vuex, vue js github newsfeed viewer
+# Vuex, Vue.js Github Newsfeed Viewer
 
 > vue.js, vuex, express
 
