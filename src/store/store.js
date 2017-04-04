@@ -11,7 +11,8 @@ export const store = new Vuex.Store({
 	state: {		
 		githubEvents: [],	
 		user:null,
-		error: null
+		error: null,
+		page: 1
 	},
 	getters,
 	mutations,

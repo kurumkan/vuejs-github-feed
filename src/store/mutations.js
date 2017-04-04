@@ -1,6 +1,8 @@
 export default {
-	updateGithubEvents(state, data){		
+	updateGithubEvents(state, data){						
 		state.githubEvents = [...state.githubEvents, ...data];
+		
+		localStorage.setItem('githubEvents',  JSON.stringify(state.githubEvents));
 	},
 
 	authUser(state, payload){			
@@ -8,6 +10,9 @@ export default {
 		state.user = {
 			...user
 		}		
+	},
+	incrementPage(state){
+		state.page++;
 	},
 	signOut(state){
 		state.user=null;

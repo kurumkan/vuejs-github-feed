@@ -36,8 +36,8 @@
             else this.$store.dispatch('fetchGithubEvents',1);
         },
         methods: {
-          loadMoreEvents(){            
-            this.$store.dispatch('fetchGithubEvents', this.$route.query.page)
+          loadMoreEvents(){              
+            this.$store.dispatch('fetchGithubEvents', this.$store.state.page)
           }
         }        
     }
