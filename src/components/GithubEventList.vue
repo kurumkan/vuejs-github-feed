@@ -4,6 +4,7 @@
         <div v-for="gEvent in githubEvents">            
             <app-github-event-list-item :gEvent='gEvent'></app-github-event-list-item>            
         </div>
+        
         <button class='btn btn-default btn-block' @click="loadMoreEvents()">Load more</button>
     </div>
 </template>
